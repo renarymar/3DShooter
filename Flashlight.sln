@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flashlight", "Flashlight.csproj", "{F45A750D-A972-68DA-EC93-1694E68A1DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flashlight.Plugins", "Flashlight.Plugins.csproj", "{D572CD08-2AD9-CF31-F9A5-EF5EEAA11DE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flashlight.Editor.Plugins", "Flashlight.Editor.Plugins.csproj", "{29EB872D-30E2-CC92-3E47-47DA5692AC1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F45A750D-A972-68DA-EC93-1694E68A1DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45A750D-A972-68DA-EC93-1694E68A1DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45A750D-A972-68DA-EC93-1694E68A1DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45A750D-A972-68DA-EC93-1694E68A1DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D572CD08-2AD9-CF31-F9A5-EF5EEAA11DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D572CD08-2AD9-CF31-F9A5-EF5EEAA11DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D572CD08-2AD9-CF31-F9A5-EF5EEAA11DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D572CD08-2AD9-CF31-F9A5-EF5EEAA11DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EB872D-30E2-CC92-3E47-47DA5692AC1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EB872D-30E2-CC92-3E47-47DA5692AC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EB872D-30E2-CC92-3E47-47DA5692AC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EB872D-30E2-CC92-3E47-47DA5692AC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
