@@ -1,21 +1,11 @@
 ﻿<Properties StartupConfiguration="{F45A750D-A972-68DA-EC93-1694E68A1DB3}|">
   <MonoDevelop.Ide.ItemProperties.Flashlight PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Helpers/BulletProjector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AI/Patrol.cs">
     <Files>
-      <File FileName="Assets/Scripts/BaseObjectScene.cs" Line="83" Column="29" />
-      <File FileName="Assets/Scripts/Controll/WeaponController.cs" Line="1" Column="29" />
-      <File FileName="Assets/Scripts/Helpers/TestEditorBehaviour.cs" Line="2" Column="1" />
-      <File FileName="Assets/Scripts/Model/Box.cs" Line="37" Column="1" />
-      <File FileName="Assets/Scripts/Controll/InputController.cs" Line="5" Column="47" />
-      <File FileName="Assets/Scripts/AI/Bot.cs" Line="73" Column="1" />
-      <File FileName="Assets/Scripts/Controll/LightController.cs" Line="53" Column="2" />
-      <File FileName="Assets/Scripts/Model/Grenade.cs" Line="3" Column="30" />
-      <File FileName="Assets/Scripts/Helpers/TestAttribute.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Model/Bullet.cs" Line="21" Column="47" />
-      <File FileName="Assets/Scripts/AI/WayPoint.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AI/Patrol.cs" Line="29" Column="86" />
-      <File FileName="Assets/Scripts/Main.cs" Line="24" Column="4" />
-      <File FileName="Assets/Scripts/Helpers/BulletProjector.cs" Line="5" Column="15" />
+      <File FileName="Assets/Scripts/Control/WeaponController.cs" Line="14" Column="83" />
+      <File FileName="Assets/Scripts/AI/Path.cs" Line="13" Column="9" />
+      <File FileName="Assets/Scripts/AI/Bot.cs" Line="46" Column="59" />
+      <File FileName="Assets/Scripts/AI/Patrol.cs" Line="19" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

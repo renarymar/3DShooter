@@ -43,9 +43,8 @@ namespace Geekbrains.AI
                     if (_curTime >= PatrolTimeDelay)
 					{
 						_curTime = 0;
-                        _agent.SetDestination(_patrol.GenericPoint(_agent));
+                        _agent.SetDestination(_patrol.GenericPoint(_agent, false));
 
-                        Debug.Log("New destination: RANDOM POINT");
 					}
 				}
 

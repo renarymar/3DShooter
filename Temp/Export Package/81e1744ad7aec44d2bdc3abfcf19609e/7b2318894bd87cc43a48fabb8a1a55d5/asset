@@ -1,0 +1,29 @@
+﻿using UnityEngine;
+
+namespace Geekbrains
+{
+	public class Box : BaseObjectScene, ISetDamage
+	{
+		public float Hp = 100;
+		public void SetDamage(InfoBulletCollision info)
+		{
+			if (Hp > 0)
+			{
+				Hp -= info.Damage;
+			}
+
+			if (Hp <= 0)
+			{
+				Hp = 0;
+				Color = Color.red;
+				var tempRB = GetComponent<Rigidbody>();
+				if (!tempRB)
+				{
+					tempRB = gameObject.AddComponent<Rigidbody>();
+				}
+				tempRB.AddForce(info.Dir * 500);
+				Destroy(gameObject, 10);
+			}
+		}
+	}
+}

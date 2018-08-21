@@ -277,11 +277,11 @@
     <Compile Include="Assets\Scripts\AI\Vision.cs" />
     <Compile Include="Assets\Scripts\AI\WayPoint.cs" />
     <Compile Include="Assets\Scripts\BaseObjectScene.cs" />
-    <Compile Include="Assets\Scripts\Controll\BaseController.cs" />
-    <Compile Include="Assets\Scripts\Controll\BatteryController.cs" />
-    <Compile Include="Assets\Scripts\Controll\InputController.cs" />
-    <Compile Include="Assets\Scripts\Controll\LightController.cs" />
-    <Compile Include="Assets\Scripts\Controll\WeaponController.cs" />
+    <Compile Include="Assets\Scripts\Control\BaseController.cs" />
+    <Compile Include="Assets\Scripts\Control\BatteryController.cs" />
+    <Compile Include="Assets\Scripts\Control\InputController.cs" />
+    <Compile Include="Assets\Scripts\Control\LightController.cs" />
+    <Compile Include="Assets\Scripts\Control\WeaponController.cs" />
     <Compile Include="Assets\Scripts\FlashLight.cs" />
     <Compile Include="Assets\Scripts\FlashLightUi.cs" />
     <Compile Include="Assets\Scripts\Helpers\BulletProjector.cs" />

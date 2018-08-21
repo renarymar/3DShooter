@@ -10,7 +10,7 @@ namespace Geekbrains.AI
 
 		private Color _lineColor;
 		private List<Transform> _nodes = new List<Transform>();
-		// OnDrawGizmosSelected()
+
 		void OnDrawGizmos()
 		{
 			Gizmos.color = _lineColor;
