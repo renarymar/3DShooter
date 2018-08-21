@@ -5,22 +5,24 @@ namespace Geekbrains.AI
 {
 	public class Path : MonoBehaviour
 	{
-		[SerializeField]
-		[ColorUsage(false)]
+        [SerializeField]
+        [ColorUsage(false)] 
+        private Color _lineColor;
+		
+        private List<Transform> _nodes = new List<Transform>();
 
-		private Color _lineColor;
-		private List<Transform> _nodes = new List<Transform>();
-
+        int counter = 0;
 		void OnDrawGizmos()
 		{
-			Gizmos.color = _lineColor;
+            Gizmos.color = _lineColor;
 			var pathTransforms = GetComponentsInChildren<Transform>();
 			_nodes = new List<Transform>();
 			foreach (var t in pathTransforms)
 			{
-				if (t != transform)
+                if (t != this.transform)
 				{
 					_nodes.Add(t);
+                    counter++;
 				}
 			}
 			for (int i = 0; i < _nodes.Count; i++)
