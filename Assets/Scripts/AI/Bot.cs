@@ -6,7 +6,7 @@ namespace Geekbrains.AI
 {
 	public class Bot : BaseObjectScene, ISetDamage
 	{
-        [SerializeField] private float Hp;
+        [SerializeField] [Range(0, 100)] private float Hp;
         [SerializeField] private float PatrolTimeDelay;
         [SerializeField] private float TargetTimeOut;
 
@@ -43,7 +43,7 @@ namespace Geekbrains.AI
                     if (_curTime >= PatrolTimeDelay)
 					{
 						_curTime = 0;
-                        _agent.SetDestination(_patrol.GenericPoint(_agent, false));
+                        _agent.SetDestination(_patrol.GenericPoint(_agent));
 
 					}
 				}

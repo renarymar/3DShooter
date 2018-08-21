@@ -6,7 +6,7 @@ namespace Geekbrains.AI
 	public class Vision
 	{
         [SerializeField] public float ActiveDist;
-        [SerializeField] public float ActiveAngle;
+        [SerializeField] [Range(0, 180)] public float ActiveAngle;
 
 		public bool VisionMath(Transform player, Transform target)
 		{

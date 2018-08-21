@@ -14,6 +14,8 @@ namespace Geekbrains
         protected virtual void Awake()
         {
             Rigidbody = GetComponent<Rigidbody>();
+            //Rigidbody = Rigidbody.GetOrAddComponent<Rigidbody>();
+
         }
 
 

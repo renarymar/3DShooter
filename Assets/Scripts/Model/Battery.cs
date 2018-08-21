@@ -7,12 +7,6 @@ namespace Geekbrains
     public class Battery : MonoBehaviour
     {
 
-        public float BatteryLevel;
-
-        private void Awake()
-        {
-            //изначальный заряд батареи
-            BatteryLevel = 100;
-        }
+        [SerializeField] [Range(0, 100)] public float BatteryLevel;
     }
 }
