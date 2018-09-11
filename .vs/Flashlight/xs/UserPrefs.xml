@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Flashlight PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AI/Path.cs">
     <Files>
-      <File FileName="Assets/Scripts/AI/Path.cs" Line="33" Column="37" />
+      <File FileName="Assets/Scripts/AI/Path.cs" Line="12" Column="9" />
       <File FileName="Assets/Scripts/AI/WayPoint.cs" Line="5" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
