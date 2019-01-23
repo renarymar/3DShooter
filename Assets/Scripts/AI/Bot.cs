@@ -70,7 +70,7 @@ namespace Geekbrains.AI
 
 				_agent.SetDestination(_target.position);
                 Debug.Log("New destination: PLAYER");
-				_agent.stoppingDistance = 2;
+				_agent.stoppingDistance = 1;
 
 				if (Vision.VisionMath(transform, _target))
 				{

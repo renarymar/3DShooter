@@ -15,6 +15,7 @@ namespace Geekbrains.AI
 		{
             var tempPoints = Object.FindObjectsOfType<WayPoint>();
 			_listPoint = tempPoints.Select(o => o.transform.position).ToArray();
+            Debug.Log(_listPoint.Length);
 		}
         public Vector3 GenericPoint(NavMeshAgent agent, bool isRandom = false)
 		{
@@ -34,7 +35,7 @@ namespace Geekbrains.AI
 			else
 			{
                 Debug.Log("NEW DESTINATION: PATROL POINT");
-				if (_indexCurPoint < _listPoint.Length - 1) // свое перемещение
+				if (_indexCurPoint < _listPoint.Length - 1)
 				{
 					_indexCurPoint++;
 				}
@@ -45,7 +46,6 @@ namespace Geekbrains.AI
 				resultPoint = _listPoint[_indexCurPoint];
 			}
 			agent.stoppingDistance = 0;
-            Debug.Log(resultPoint);
             return resultPoint;
 
 		}
