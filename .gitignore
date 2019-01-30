@@ -1,3 +1,8 @@
 Library/
 Temp/
 .vs/
+3DShooter.csproj
+3DShooter.Editor.csproj
+3dShooter.Editor.Plugins.csproj
+3DShooter.Plugins.csproj
+3DShooter.sln
