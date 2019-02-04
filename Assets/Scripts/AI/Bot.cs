@@ -29,11 +29,17 @@ namespace Geekbrains.AI
 			_patrol = new Patrol();
 			_target = FindObjectOfType<CharacterController>().transform;
 			_weapon = GetComponentInChildren<Weapon>();
+
+            GetComponent<Animator>().Play("move_forward");
 		}
 
 		private void Update()
 		{
-			if(_isDeath) return;
+			if(_isDeath) 
+            {
+                GetComponent<Animator>().Play("dead");
+                return;
+            }
 
 			if (!_isTarget)
 			{
@@ -74,6 +80,7 @@ namespace Geekbrains.AI
 
 				if (Vision.VisionMath(transform, _target))
 				{
+                    GetComponent<Animator>().Play("attack_short_001");
 					_weapon.Fire();
 				}
 			}
@@ -83,6 +90,7 @@ namespace Geekbrains.AI
 		{
 			if(Hp > 0)
 			{
+                GetComponent<Animator>().Play("damage_001");
 				Hp -= info.Damage;
 			}
 

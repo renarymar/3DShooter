@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Helpers;
 
 namespace Geekbrains
 {
@@ -16,6 +17,5 @@ namespace Geekbrains
             Destroy(gameObject, _timeToDestroy);
             _curentDamage = _baseDamage; //как будет меняться урон
         }
-
     }
 }

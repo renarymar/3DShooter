@@ -12,7 +12,6 @@ namespace Geekbrains
         [SerializeField] public float _rechargeTime;
         [SerializeField] public Ammunition Ammunition;
 
-
         protected Timer _timer = new Timer(); //переделать перезарядку
         protected bool _isFire = true;
 
@@ -27,7 +26,25 @@ namespace Geekbrains
                 _isFire = true;
             }
         }
+    }
 
+    public abstract class Wand : BaseObjectScene
+    {        
+        [SerializeField] public float _rechargeTime;
+
+        protected Timer _timer = new Timer(); //переделать перезарядку
+        protected bool _isFire = true;
+
+        public abstract void Fire();
+
+        protected virtual void Update()
+        {
+            _timer.Update();
+            if (_timer.IsEvent())
+            {
+                _isFire = true;
+            }
+        }
 
     }
 }

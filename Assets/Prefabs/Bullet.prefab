@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6e131026fa642618f5bb6571b660c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BulletProjector: {fileID: 114599969236071192, guid: 3eaa8b387bbf48447978c4113a2f8fcb,
+    type: 2}
   Rigidbody: {fileID: 0}
   _timeToDestroy: 15
   _baseDamage: 15
