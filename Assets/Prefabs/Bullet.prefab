@@ -304,7 +304,7 @@ MonoBehaviour:
     type: 2}
   Rigidbody: {fileID: 0}
   _timeToDestroy: 15
-  _baseDamage: 100
+  _baseDamage: 15
 --- !u!135 &135259115112238154
 SphereCollider:
   m_ObjectHideFlags: 1
