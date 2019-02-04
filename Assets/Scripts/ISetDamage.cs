@@ -4,6 +4,6 @@ namespace Geekbrains
 {
 	public interface ISetDamage
 	{
-		void SetDamage(InfoBulletCollision info);
+        void SetDamage(InfoBulletCollision info);
 	}
 }

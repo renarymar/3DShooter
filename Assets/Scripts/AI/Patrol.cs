@@ -17,6 +17,7 @@ namespace Geekbrains.AI
 			_listPoint = tempPoints.Select(o => o.transform.position).ToArray();
             Debug.Log(_listPoint.Length);
 		}
+
         public Vector3 GenericPoint(NavMeshAgent agent, bool isRandom = false)
 		{
             if (agent == null) return Vector3.zero;
