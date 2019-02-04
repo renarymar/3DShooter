@@ -37,7 +37,7 @@ namespace Geekbrains.AI
 		{
 			if(_isDeath) 
             {
-                GetComponent<Animator>().Play("dead");
+                
                 return;
             }
 
@@ -98,18 +98,8 @@ namespace Geekbrains.AI
 			{
 				_isDeath = true;
 				_agent.enabled = false;
-				foreach (var child in GetComponentsInChildren<Transform>())
-				{
-					child.parent = null;
-					var tempRB = child.gameObject.GetComponent<Rigidbody>();
-					if (!tempRB)
-					{
-						tempRB = child.gameObject.AddComponent<Rigidbody>();
-					}
-					tempRB.AddForce(info.Dir * Random.Range(100,300));
-					Destroy(child.gameObject, 10);
-				}
-				
+                GetComponent<Animator>().Play("dead");
+                Destroy(this.gameObject, 10);
 			}
 		}
 

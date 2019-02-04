@@ -6,7 +6,7 @@ public class LightSettings : MonoBehaviour {
 
     [SerializeField] Color Sky, Equator, Ground, SunColor;
     [SerializeField] float RotateSpeed;
-    //[SerializeField] GameObject Sun, Moon;
+    [SerializeField] GameObject Sun;
 
     private void Update()
     {
@@ -15,10 +15,6 @@ public class LightSettings : MonoBehaviour {
         RenderSettings.ambientGroundColor = Ground;
         RenderSettings.ambientEquatorColor = Equator;
 
-        //Sun.transform.Rotate(transform.right, RotateSpeed, Space.Self);
-        //Moon.transform.Rotate(transform.right, RotateSpeed, Space.Self);
-
-        transform.Rotate(transform.right, RotateSpeed, Space.Self);
-
+        Sun.transform.Rotate(transform.right, RotateSpeed, Space.Self);
      }
 }
