@@ -64,18 +64,13 @@ namespace Geekbrains.AI
 			{
                 if ((Time.time - _hitTime) > TargetTimeOut)
                 {
-                    Debug.Log("Lost Target");
                     _isTarget = false;
                     _agent.ResetPath();
-                    Debug.Log("Path Reset");
 
-                    if (_agent.hasPath)
-                        Debug.Log("Reset Path has failed!");
                     return;
                 }
 
 				_agent.SetDestination(_target.position);
-                Debug.Log("New destination: PLAYER");
 				_agent.stoppingDistance = 1;
 
 				if (Vision.VisionMath(transform, _target))
@@ -114,7 +109,6 @@ namespace Geekbrains.AI
 			var flat = new Vector3(Vision.ActiveDist, 0, Vision.ActiveDist);
 			Gizmos.matrix = Matrix4x4.TRS(t.position, t.rotation, flat);
 			Gizmos.DrawWireSphere(Vector3.zero, 5);
-
 #endif
 		}
 	}
