@@ -11,7 +11,6 @@ namespace Geekbrains
         private void OnCollisionEnter(Collision collision)
         {
             SetDamage(collision.collider.gameObject.GetComponent<ISetDamage>());
-            //
             Destroy(gameObject);
         }
 

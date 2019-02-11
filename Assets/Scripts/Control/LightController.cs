@@ -17,7 +17,7 @@ namespace Geekbrains
         private void Update()
         {
             if (!IsActive) return;
-            _flashLight.Rotation();
+            //_flashLight.Rotation();
 
 
         }

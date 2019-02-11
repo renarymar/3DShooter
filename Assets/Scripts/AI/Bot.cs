@@ -37,7 +37,7 @@ namespace Geekbrains.AI
 		{
 			if(_isDeath) 
             {
-                GetComponent<Animator>().Play("dead");
+                
                 return;
             }
 
@@ -64,18 +64,13 @@ namespace Geekbrains.AI
 			{
                 if ((Time.time - _hitTime) > TargetTimeOut)
                 {
-                    Debug.Log("Lost Target");
                     _isTarget = false;
                     _agent.ResetPath();
-                    Debug.Log("Path Reset");
 
-                    if (_agent.hasPath)
-                        Debug.Log("Reset Path has failed!");
                     return;
                 }
 
 				_agent.SetDestination(_target.position);
-                Debug.Log("New destination: PLAYER");
 				_agent.stoppingDistance = 1;
 
 				if (Vision.VisionMath(transform, _target))
@@ -98,18 +93,8 @@ namespace Geekbrains.AI
 			{
 				_isDeath = true;
 				_agent.enabled = false;
-				foreach (var child in GetComponentsInChildren<Transform>())
-				{
-					child.parent = null;
-					var tempRB = child.gameObject.GetComponent<Rigidbody>();
-					if (!tempRB)
-					{
-						tempRB = child.gameObject.AddComponent<Rigidbody>();
-					}
-					tempRB.AddForce(info.Dir * Random.Range(100,300));
-					Destroy(child.gameObject, 10);
-				}
-				
+                GetComponent<Animator>().Play("dead");
+                Destroy(this.gameObject, 10);
 			}
 		}
 
@@ -124,7 +109,6 @@ namespace Geekbrains.AI
 			var flat = new Vector3(Vision.ActiveDist, 0, Vision.ActiveDist);
 			Gizmos.matrix = Matrix4x4.TRS(t.position, t.rotation, flat);
 			Gizmos.DrawWireSphere(Vector3.zero, 5);
-
 #endif
 		}
 	}
