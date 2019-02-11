@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Geekbrains.Editor
+namespace Assets.Scripts.MyEditor
 {
 	public class CreateCone : ScriptableWizard
 	{

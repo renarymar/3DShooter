@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 using Random = UnityEngine.Random;
-namespace Geekbrains.Editor
+namespace Assets.Scripts.MyEditor
 {
 	public class MyWindow : EditorWindow
 	{
