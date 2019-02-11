@@ -29,10 +29,10 @@ namespace Geekbrains
             transform.rotation = _goFollow.rotation;
 		}
 
-		public void Rotation()
+		/*public void Rotation()
         {
             transform.position = _goFollow.position + _vectorOffset;
             transform.rotation = Quaternion.Slerp(transform.rotation, _goFollow.rotation, _speed * Time.deltaTime);
-		}
+		}*/
 	}
 }

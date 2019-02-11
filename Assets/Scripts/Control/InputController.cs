@@ -11,7 +11,6 @@ namespace Geekbrains
                 Main.Instance.LightController.Switch();
             }
 
-            // сделать переключение оружия по колесику мышки
             if (Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetKeyDown(KeyCode.Alpha1))
             {
                 SetWeapon(1);
